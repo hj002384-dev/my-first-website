@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaiqa Restaurant & Cafe | Digital Menu</title>
+    <link rel="stylesheet" href="project5.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>🔥 Zaiqa Fast Food & Cafe</h1>
+        <p>Fresh & Delicious Food Delivered to Your Doorstep</p>
+    </header>
+
+    <!-- Category Filter Buttons -->
+    <div class="categories">
+        <button class="btn-cat active" onclick="filterMenu('all', this)">All Items</button>
+        <button class="btn-cat" onclick="filterMenu('burgers', this)">Burgers</button>
+        <button class="btn-cat" onclick="filterMenu('pizza', this)">Pizza</button>
+        <button class="btn-cat" onclick="filterMenu('drinks', this)">Drinks</button>
+    </div>
+
+    <!-- Menu Items Container -->
+    <div class="container">
+        <div class="menu-grid" id="menuGrid">
+
+            <!-- Item 1: Burger -->
+            <div class="menu-card" data-category="burgers">
+                <div class="item-info">
+                    <h3>Zinger Cheese Burger</h3>
+                    <p>Crispy chicken patty with double cheese, fresh lettuce & secret sauce.</p>
+                </div>
+                <div class="item-bottom">
+                    <span class="price">PKR 550</span>
+                    <button class="btn-order" onclick="orderWhatsApp('Zinger Cheese Burger', '550')">Order via WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Item 2: Burger -->
+            <div class="menu-card" data-category="burgers">
+                <div class="item-info">
+                    <h3>Beef Smash Burger</h3>
+                    <p>Juicy beef patty topped with caramelized onions & melted cheddar cheese.</p>
+                </div>
+                <div class="item-bottom">
+                    <span class="price">PKR 750</span>
+                    <button class="btn-order" onclick="orderWhatsApp('Beef Smash Burger', '750')">Order via WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Item 3: Pizza -->
+            <div class="menu-card" data-category="pizza">
+                <div class="item-info">
+                    <h3>Chicken Tikka Pizza (Medium)</h3>
+                    <p>Loaded with spicy chicken tikka, mozzarella cheese, onions & capsicum.</p>
+                </div>
+                <div class="item-bottom">
+                    <span class="price">PKR 1,200</span>
+                    <button class="btn-order" onclick="orderWhatsApp('Chicken Tikka Pizza (Medium)', '1200')">Order via WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Item 4: Pizza -->
+            <div class="menu-card" data-category="pizza">
+                <div class="item-info">
+                    <h3>Crown Crust Supreme</h3>
+                    <p>Cheese stuffed crust loaded with smoked chicken, olives & mushrooms.</p>
+                </div>
+                <div class="item-bottom">
+                    <span class="price">PKR 1,650</span>
+                    <button class="btn-order" onclick="orderWhatsApp('Crown Crust Supreme', '1650')">Order via WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Item 5: Drink -->
+            <div class="menu-card" data-category="drinks">
+                <div class="item-info">
+                    <h3>Mint Margarita</h3>
+                    <p>Refreshing blend of fresh mint leaves, lemon juice, ice & soda.</p>
+                </div>
+                <div class="item-bottom">
+                    <span class="price">PKR 300</span>
+                    <button class="btn-order" onclick="orderWhatsApp('Mint Margarita', '300')">Order via WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Item 6: Drink -->
+            <div class="menu-card" data-category="drinks">
+                <div class="item-info">
+                    <h3>Chocolate Cold Coffee</h3>
+                    <p>Rich espresso blended with chilled milk, ice cream & chocolate syrup.</p>
+                </div>
+                <div class="item-bottom">
+                    <span class="price">PKR 450</span>
+                    <button class="btn-order" onclick="orderWhatsApp('Chocolate Cold Coffee', '450')">Order via WhatsApp</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="project5.js"></script>
+</body>
+</html>
